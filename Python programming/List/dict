@@ -1,0 +1,23 @@
+# Existing dictionary
+my_dict = {
+    'name': 'John Doe',
+    'id': 123,
+    'department': 'Sales'
+}
+
+# List of lists with new 'name' and 'id' values
+updates = [
+    ['Jane Smith', 456],
+    ['Alice Johnson', 789]
+]
+
+# Function to update the dictionary with new values
+def update_dict_with_list(dictionary, update_list):
+    for name, id in update_list:
+        dictionary['name'] = name
+        dictionary['id'] = id
+
+# Updating the dictionary
+update_dict_with_list(my_dict, updates)
+
+print(my_dict)
